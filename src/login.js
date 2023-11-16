@@ -18,7 +18,7 @@ export default function Login() {
             <div class="p-6 mx-6 space-y-4 md:space-y-6 sm:p-8 lg:p-16">
               <h1 class="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">Sign in</h1>
 
-              <form class="space-y-4 md:space-y-6" action="#">
+              <form class="space-y-4 md:space-y-6 " action="#">
                 <div>
                   <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                     Your email
