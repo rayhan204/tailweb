@@ -168,16 +168,16 @@ export default function Example() {
         </div>
         {selectedProduct && (
           <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-slate-800 bg-opacity-75">
-            <div className="bg-orange-800 bg-opacity-80 p-8 rounded-lg ">
-              <h2 className="text-2xl font-bold mb-4">{selectedProduct.name}</h2>
+            <div className="bg-sky-800 bg-opacity-80 relative p-4 rounded-lg w-xl  ">
+              <h2 className="text-3xl font-bold text-slate-300 mb-4">{selectedProduct.name}</h2>
               <div className="flex items-center justify-center mb-4">
-                <img src={selectedProduct.imageSrc} alt={selectedProduct.imageAlt} className="rounded-lg w-52 bg-slate-700 h-96 relative" />
+                <img src={selectedProduct.imageSrc} alt={selectedProduct.imageAlt} className="rounded-lg w-lg bg-slate-700 h-96 relative" />
                 <div className="ml-4">
-                  <p className="mb-36 max-w-prose text-justify">
-                    <header className="font-bold">Deskripsi</header>
+                  <p className="mb-36 max-w-prose text-slate-300 text-justify">
+                    <header className="font-bold text-xl text-center pb-4 text-slate-300">Deskripsi</header>
                     {selectedProduct.Description}
                   </p>
-                  <p className="text-lg mb-2">{selectedProduct.price}</p>
+                  <p className="text-lg text-slate-300 mb-2">{selectedProduct.price}</p>
 
                   <button className="bg-slate-700 text-slate-200 px-4 py-2 mb-4 rounded hover:bg-opacity-50 mr-16" onClick={handleCloseDetail}>
                     Tutup Detail
